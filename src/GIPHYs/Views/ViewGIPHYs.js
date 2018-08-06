@@ -46,6 +46,7 @@ class ViewGIPHYs extends Component {
 
     if ( name === "searchString") {
       GIPHYObj.searchString = value;
+      GIPHYObj.pagination.offset = 0;
     }
 
     if ( name === "searchString" && this.state.searchInRealTime ) {
