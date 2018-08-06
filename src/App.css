@@ -1,0 +1,51 @@
+body {
+  background-color: #000000;
+  color: white;
+}
+
+h1.jumbotron, input.jumbotron {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.input-group {
+  padding-bottom: 10px;
+}
+
+input {
+  color: #000000;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.grid-loading {
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.grid-item {
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-item:hover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  -webkit-filter: sepia(100%); /* Safari 6.0 - 9.0 */
+  filter: sepia(100%);
+  margin-top: -5px;
+}
+
+@media (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+}
